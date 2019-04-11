@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <title>Train Scheduler</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">ACTIVE TRAIN SCHEDULER</h1>
+                        <p class="lead">Active Train Scheduler. Accurate travel solution. Actual time saver.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped" style="background: #D4D5D5">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Midwest Express</th>
+                            <td>Chicago</td>
+                            <td>25</td>
+                            <td>5:00pm</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>blah</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form style="background: #D4D5D5; padding: 5px; margin-bottom: 10px">
+                    <div class="form-group">
+                        <label for="trainNameForm">Train Name</label>
+                        <input type="text" class="form-control" id="trainNameForm" placeholder="ATS Express">
+                    </div>
+                    <div class="form-group">
+                        <label for="destinationForm">Destination</label>
+                        <input type="text" class="form-control" id="destinationForm" placeholder="Gotham City">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstTimeForm">First Train Time (HH:mm - military time)</label>
+                        <input type="text" class="form-control" id="firstTimeForm" placeholder="18:00">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequencyForm">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequencyForm" placeholder="30">
+                    </div>
+
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
