@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+
 
 </head>
 
@@ -16,7 +22,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="jumbotron jumbotron-fluid">
+                <div class="jumbotron jumbotron-fluid"> 
                     <div class="container">
                         <h1 class="display-4">ACTIVE TRAIN SCHEDULER</h1>
                         <p class="lead">Active Train Scheduler. Accurate travel solution. Actual time saver.</p>
@@ -36,28 +42,8 @@
                             <th scope="col">Minutes Away</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Midwest Express</th>
-                            <td>Chicago</td>
-                            <td>25</td>
-                            <td>5:00pm</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>15</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>blah</td>
-                        </tr>
+                    <tbody id="traintable">
+                        
                     </tbody>
                 </table>
             </div>
@@ -69,7 +55,12 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <form style="background: #D4D5D5; padding: 5px; margin-bottom: 10px">
+                <h4>Add a Train</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form>
                     <div class="form-group">
                         <label for="trainNameForm">Train Name</label>
                         <input type="text" class="form-control" id="trainNameForm" placeholder="ATS Express">
@@ -87,7 +78,7 @@
                         <input type="text" class="form-control" id="frequencyForm" placeholder="30">
                     </div>
 
-                    <button type="submit" class="btn btn-info">Submit</button>
+                    <button type="submit" class="btn btn-info" id="addTrain">Submit</button>
                 </form>
             </div>
         </div>
