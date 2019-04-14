@@ -1,4 +1,4 @@
-//dont forget document on ready if necessary
+//dont forget document on ready if necessary 
 
 var config = {
     apiKey: "AIzaSyB0udDietZwQJV10aJiFlA0plwBijmV4Y4",
@@ -64,6 +64,25 @@ database.ref().on("child_added", function(snapshot){
 }, function(errorObject) {
     console.log("The read failed: " + errorObject.code);
 });
+
+// attempted to have it refresh the arrival times every 60 secs but didnt want to mess up the database
+
+// var interval = 0;
+
+// setInterval(interSet, 60000);
+
+// function interSet() {
+//   interval++;
+//   database.ref("interval").set({
+//     fbInterval: interval
+//   });
+//   console.log(interval);
+// };
+
+// database.ref("interval").on("value", function (snap){
+//   var sn = snap.val();
+//   console.log(sn.fbInterval);
+// })
 
 
 // setInterval(clock, 1000);
