@@ -3,7 +3,7 @@ body {
 }
 
 .table {
-    border: #000000 solid 1px;
+    border: #343a40 solid 2px;
 }
 
 
@@ -11,4 +11,18 @@ form {
     background: #D4D5D5; 
     padding: 5px; 
     margin-bottom: 10px;
+}
+
+h6 {
+    background: #343a40;
+    color: #ffffff;
+    padding: 15px;
+    margin-bottom: 0px;
+
+
+}
+
+.jumbotron {
+    background-image: url("images/newTrain.png");
+    padding: 40px 0px;
 }
